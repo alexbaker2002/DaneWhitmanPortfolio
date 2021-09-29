@@ -27,13 +27,30 @@ body{
     
 
 }
+/* default styles */
 .header{
-    background-image: url("/img/DaneWhitmanLarge.png");
-    background-color: #c1c1ce;
+    
+    /* background-color: #c1c1ce; */
     background-repeat: no-repeat;
     position: fixed;
     background-position: fixed;
     background-size: cover;
-    min-height: 400px;
+    
 
+}
+
+/*Large screens*/
+@media only screen and (min-width: 992px) {
+    .header{
+        background-image: url("/img/DaneWhitmanLarge.png");
+        min-height: 480px;
+    }
+  
+}
+/*small screens*/
+@media only screen and (min-width: 576px) and (max-width:991px) {
+    .header {
+        background-image: url("/img/DaneWhitmanSmall.png");
+    }
+   
 }
